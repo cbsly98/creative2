@@ -3,18 +3,32 @@
 
 <head>
   <meta charset="utf-8" />
-  <title></title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Jokes</title>
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
   <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
+  <div class="content">
 
-  <h1>Debugging JavaScript</h1>
+  <h1>The Joke Generator</h1>
+  <p>Type of Joke:</p>
+  <select id="selector">
+    <option value="general">General</option>
+    <option value="programming">Programming</option>
+    <option value="knock-knock">Knock-Knock</option>
+  </select>
+</br>
+  <button id="getJoke" class="pure-button pure-button-primary">Get Joke!</button>
+  <button id="getPunchline" class="pure-button pure-button-primary">Get Punchline!</button>
+  <p id="joke"></p>
+  <p id="punchline"></p>
+</div>
 
-  <button id="test" class="pure-button pure-button-primary">Test</button>
-  <p id="results"></p>
-
+<div class="footer">
+  <a class="footer-link" href="https://github.com/cbsly98/creative2">Github Project</a>
+</div>
 
   <script text="type/javascript" src="/script.js">
   </script>
